@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>省级联动</title>
+    <script th:src="@{js/jquery-1.11.1-min.js}" type="text/javascript"></script>
+    <script th:src="@{js/city.js}" type="text/javascript"></script>
+    <style type="text/css">
+        #content {
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+    <h1>省市联动</h1>
+    省:<select id="province">
+</select>
+    市:<select id="city">
+</select>
+    <input type="button" value="提交" id="but">
+</div>
+</body>
+</html>
